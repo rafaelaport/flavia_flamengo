@@ -1,0 +1,216 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+/* Color */
+:root {
+    --primary-color: #d2232a;
+    --second-color: #000;
+    --text-light-color: #fff;
+  } 
+
+/* Font */
+h3{
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bold;
+  }
+
+.primary-color{
+  background-color: var(--primary-color);
+}
+
+/* Navbar */
+.navbar{
+  padding: 0!important;
+  padding-top: 1rem!important;
+  padding-bottom: 1rem!important;
+  margin-bottom: 2rem;
+  }
+
+.navbar-brand{
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Rajdhani', sans-serif;
+}
+.navbar a {
+  color: var(--text-light-color);
+}
+
+
+/* button */
+
+.btn{
+  color: var(--text-light-color);
+  background-color: var(--primary-color);
+}
+
+.btn:hover{
+  color: var(--text-light-color);
+  background-color: var(--second-color);
+  cursor: pointer;
+}
+
+.btn:hover:disabled{
+  color: var(--text-light-color);
+  background-color: var(--primary-color);
+  cursor: default;
+}
+
+.popup .show:hover{
+  cursor: default;
+}
+
+/* Icon*/
+.fa{
+  float: left;
+  padding-top: 5px;
+  vertical-align: center;
+  color: var(--primary-color);
+}
+.fa:hover{
+  cursor: pointer;
+}
+
+/* Content */
+.content{
+    padding-top: 1rem ;
+  }
+
+/* Text */
+.text-primary {
+    color: var(--primary-color)!important;
+}
+
+.cons-title{
+  text-align: center;
+  color: var(--primary-color);
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: bold;
+}
+
+.sub-text{
+  text-align: center;
+  color: var(--second-color);
+  font-family: 'Rajdhani', sans-serif;
+}
+
+/* Search Form */
+.form-control{
+  font-family: 'Rajdhani', sans-serif;
+}
+
+/* Cards */
+.card-deck{
+  margin-top: 2rem;
+}
+
+.cards-event{
+  margin-top: 2rem;
+}
+
+.card-title{
+  font-size: 1.7rem;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: bold;
+  color: var(--second-color);
+}
+
+.card-body{
+  padding: 1rem!important;
+}
+
+.home-img{
+  height: 50%;
+}
+
+.card-group{
+  margin-top: 2rem;
+}
+
+.cons-img{
+  height: 60%;
+}
+
+/* Alert */
+.alert-color{ 
+  color: var(--primary-color)!important;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: bold;
+}
+
+
+/* Footer */
+.page-footer {
+  margin-top: 5rem;
+}
+
+.footer-text{
+  color: var(--text-light-color);
+}
+
+.footer-link{
+  color: var(--second-color);
+}
+
+.footer-link:hover{
+  color: var(--text-light-color);
+}
+
+
+
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: var(--second-color);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+/* Popup show*/
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+  background: black;
+}
+
+
+/* Fade in */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}

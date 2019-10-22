@@ -1,0 +1,94 @@
+<!-- Cards & Search -->
+<div class = "container content"> 
+
+        <!-- Search -->
+            <form (submit)="buscar()">
+               <div class="p-1 bg-light  shadow-sm mb-4">
+                 <div class="input-group">
+                   <input type="text" placeholder="Buscar esportes" aria-describedby="button-addon1" 
+                   class="form-control border-0 bg-light" id='textoBuscado' name="textoBuscado" [(ngModel)]="textoBuscado">
+                   <div class="input-group-append">
+                     <button *ngIf="ehIgual" routerLink="/consulta" id="button-addon1" type="submit" class="form-control border-0 bg-light"><i class="fa fa-search"></i></button>
+                     <button *ngIf="!ehIgual" id="button-addon1" type="submit" class="form-control border-0 bg-light"><i class="fa fa-search"></i></button>
+                   </div>
+                 </div>
+               </div>
+             </form>
+<!-- Cards -->
+<h3 class="cards-event text-primary">Busca: Vôlei</h3>
+<div class="card-deck">
+  <div class="card">
+    <img class="card-img-top home-img" src="https://i.imgur.com/Uf2aO2w.jpg" alt="Futebol Feminino Flamengo">
+    <div class="card-body">
+      <h5 class="card-title">Vôlei</h5>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Flamengo X Valinhos</li>
+      <li class="list-group-item">Maracanã - Qua, 23/10 16:30</li>
+      <li class="list-group-item">Superliga B</li>
+    </ul><div class="card-footer text-right">
+        <a routerLink="/time"><i class="fa fa-info fa-2x" aria-hidden="true"></i></a>
+        <div class="popup"><span class="popuptext primary-color" id="myPopup">Evento agendado!</span>
+    
+          <button  class="popup btn primary-color" (click)="myFunction(); actionMethod(); clicked = true;" [disabled]="clicked" type="button">Adicionar Evento
+          </button>
+      </div>
+      </div>
+  </div>
+  
+  <div class="card">
+    <img class="card-img-top home-img" src="https://i.imgur.com/fmj8Imq.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Vôlei</h5>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">Flamengo X Maringá</li>
+        <li class="list-group-item">Maracanã - Sáb, 26/10 13:30</li>
+        <li class="list-group-item">Campeonato Mineiro</li>
+      </ul>
+      <div class="card-footer text-right">
+          <a routerLink="/time"><i class="fa fa-info fa-2x" aria-hidden="true"></i></a>
+          <div class="popup"><span class="popuptext primary-color" id="myPopup2">Evento agendado!</span>
+      
+          <button  class="popup btn primary-color" (click)="myFunction2(); actionMethod(); clicked2 = true;" [disabled]="clicked2" type="button">Adicionar Evento
+             
+          </button>
+        </div>
+      </div>
+  </div>
+
+  <div class="card">
+    <img class="card-img-top home-img" src="https://i.imgur.com/SMlXmW7.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Vôlei</h5>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">Flamengo x Praia Clube</li>
+        <li class="list-group-item">Maracanã - Ter, 02/11 11:00</li>
+        <li class="list-group-item">Campeonato Mineiro</li>
+      </ul>
+      <div class="card-footer text-right">
+          <a routerLink="/time"><i class="fa fa-info fa-2x" aria-hidden="true"></i></a>
+          <div class="popup"><span class="popuptext primary-color" id="myPopup3">Evento agendado!</span>
+      
+          <button  class="popup btn primary-color" (click)="myFunction3(); actionMethod(); clicked3 = true;" [disabled]="clicked3" type="button">Adicionar Evento
+             
+          </button>
+        </div>
+      </div>
+</div>
+
+</div>
+</div>
+
+<!-- Footer -->
+<footer class="page-footer font-small blue primary-color ">
+
+<!-- Copyright -->
+  <div class="footer-copyright text-center py-3 footer-text">© 2019 Copyright:
+    <a class="footer-link" href="https://mdbootstrap.com/education/bootstrap/"> flamengo.com.br</a>
+  </div>
+<!-- Copyright -->
+
+</footer>
+<!-- Footer -->
