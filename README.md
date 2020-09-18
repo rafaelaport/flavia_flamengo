@@ -9,7 +9,6 @@ Uma plataforma com o intuito de engajar pessoas em esportes femininos, considera
 
 Nosso produto, tem por objetivo principal promover eventos esportivos, escalação de seleções, apresentar atletas, compartilhar informações de forma unificada. Dessa forma, facilitando ao usuário que tem interesse no entanto não sabe onde buscar. A grande inovação seria a Fláviam que interage com o público através de hashtags pré-definidas. Flávia não teria um rosto definido, seria apenas uma silhueta para que cada mulher pudesse enxergá-la ao seu modo. Sua silhueta é composta por nomes de atletas que em algum momento contribuíram com seu talento para o Clube.  
 
-
 #### Informações adicionais 
 
 Tecnologias utilizadas: 
