@@ -17,3 +17,11 @@ Tecnologias utilizadas:
 - Angular 
 - Java 
 - Node (Bot) 
+
+#### Autoras
+
+- Mariana Pinheiro
+- Mariane Teixeira
+- Rafaela Portugal
+- Renata Emanuelle
+- Treicy Madelon
